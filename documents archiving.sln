@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentsArchiving.BLL", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentsArchiving.DAL", "DocumentsArchiving.DAL\DocumentsArchiving.DAL.csproj", "{AB51FC5B-9995-47C8-8354-7537F33F718E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentsArchiving.BI", "DocumentsArchiving.BI\DocumentsArchiving.BI.csproj", "{5DBEC66C-58EC-4A6F-BDBF-E28EBCDFB27F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{AB51FC5B-9995-47C8-8354-7537F33F718E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB51FC5B-9995-47C8-8354-7537F33F718E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB51FC5B-9995-47C8-8354-7537F33F718E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DBEC66C-58EC-4A6F-BDBF-E28EBCDFB27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DBEC66C-58EC-4A6F-BDBF-E28EBCDFB27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DBEC66C-58EC-4A6F-BDBF-E28EBCDFB27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DBEC66C-58EC-4A6F-BDBF-E28EBCDFB27F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

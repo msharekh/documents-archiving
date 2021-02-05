@@ -76,3 +76,4 @@ C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\obj\Debug\D
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\obj\Debug\DocumentsArchiving.Web.csproj.CopyComplete
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\obj\Debug\DocumentsArchiving.Web.dll
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\obj\Debug\DocumentsArchiving.Web.pdb
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\obj\Debug\DocumentsArchiving.Web.csprojAssemblyReference.cache
