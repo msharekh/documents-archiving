@@ -163,11 +163,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Documents\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Documents\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -181,6 +181,16 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DocumentsArchiving.BI\DocumentsArchiving.BI.csproj">
+      <Project>{5DBEC66C-58EC-4A6F-BDBF-E28EBCDFB27F}</Project>
+      <Name>DocumentsArchiving.BI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DocumentsArchiving.BLL\DocumentsArchiving.BLL.csproj">
+      <Project>{83387B74-ADF5-4ACB-B4D0-C6AC0181A9EE}</Project>
+      <Name>DocumentsArchiving.BLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

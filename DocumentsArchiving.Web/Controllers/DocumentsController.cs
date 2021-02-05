@@ -1,89 +1,132 @@
-﻿using System;
+﻿using DocumentsArchiving.BI;
+using DocumentsArchiving.BLL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
 namespace DocumentsArchiving.Web.Controllers
 {
     public class DocumentsController : Controller
+
     {
+
         // GET: Documents
+
         public ActionResult Index()
+
         {
+
             return View();
+
         }
 
-        // GET: Documents/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
+
+
+        
+
 
         // GET: Documents/Create
+
         public ActionResult Create()
+
         {
+
+            //ViewBag.DocumentTypeId = new SelectList(db.DocumentTypes, "DocumentTypeId", "DocumentTypeDesc");
+
             return View();
+
         }
+
+
 
         // POST: Documents/Create
+
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
+
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
 
-                return RedirectToAction("Index");
-            }
-            catch
+        [ValidateAntiForgeryToken]
+
+        public ActionResult Create(DocumentAdd document)
+
+        {
+
+            //ViewBag.DocumentTypeId = new SelectList(db.DocumentTypes, "DocumentTypeId", "DocumentTypeDesc", document.DocumentTypeId);
+
+            if (ModelState.IsValid)
+
             {
-                return View();
+
+                try
+
+                {
+
+                    document.Path = DocumentBLL.UploadFile(document.File, Server.MapPath("~/UploadedFiles"));
+
+
+
+                    DocumentBLL.InsertDocument(document);
+
+
+
+                    ViewBag.Message = "File upload SUCCESS ";
+
+
+
+                    return RedirectToAction("Index");
+
+
+
+                }
+
+                catch (Exception ex)
+
+                {
+
+                    ViewBag.Message = "File upload faild " + ex.Message;
+
+                    return View(document);
+
+                }
+
+
+
+                //return RedirectToAction("Index");
+
             }
+
+
+
+            return View(document);
+
         }
 
-        // GET: Documents/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+
+
+
+
+
 
         // POST: Documents/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
 
-        // GET: Documents/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
 
-        // POST: Documents/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
+
+
+
+
+
+
+
+
+
     }
 }

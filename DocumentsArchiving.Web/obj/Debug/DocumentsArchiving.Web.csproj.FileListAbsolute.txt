@@ -77,3 +77,12 @@ C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\obj\Debug\D
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\obj\Debug\DocumentsArchiving.Web.dll
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\obj\Debug\DocumentsArchiving.Web.pdb
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\obj\Debug\DocumentsArchiving.Web.csprojAssemblyReference.cache
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\DocumentsArchiving.BI.dll
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\DocumentsArchiving.BLL.dll
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\DocumentsArchiving.DAL.dll
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\EntityFramework.dll
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\DocumentsArchiving.BI.pdb
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\DocumentsArchiving.BLL.pdb
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\DocumentsArchiving.DAL.pdb
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\DocumentsArchiving.DAL.dll.config
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\EntityFramework.xml
