@@ -7,26 +7,15 @@ using System.Threading.Tasks;
 
 namespace DocumentsArchiving.DAL
 {
-    public class DocumentDAL
-
-    {
+    public class DocumentDAL{
 
         //private DocDBEntities db = new DocDBEntities();
-
-
-
-        public static void InsertDocument(DocumentAdd document)
-
+        public static void InsertDocument(DocumentVM document)
         {
-
             using (var repo = new GenericRepository<Document>())
-
             {
-
                 var doc = new Document()
-
                 {
-
                     DocumentTypeId = document.DocumentTypeId,
 
                     Details = document.Details,
@@ -38,9 +27,7 @@ namespace DocumentsArchiving.DAL
                     Subject = document.Subject,
 
                     Path = document.Path
-
                 };
-
 
 
                 //execute
@@ -51,10 +38,26 @@ namespace DocumentsArchiving.DAL
 
             }
 
-
-
         }
 
-
-    }
+        public static List<DocumentTypeVM> GetDocumentTypes()
+        {
+            using (var repo = new GenericRepository<DocumentType>())
+            {
+                var list = repo.GetAll().ToList();
+                List<DocumentTypeVM> documentTypeVMs=new List<DocumentTypeVM>();
+                foreach (var item in list)
+                {
+                    documentTypeVMs.Add(
+                        new DocumentTypeVM() {
+                            DocumentTypeId = item.DocumentTypeId,
+                            DocumentTypeDesc = item.DocumentTypeDesc
+                        }
+                     );
+                }
+                return documentTypeVMs;
+;
+            }
+        }
+    }    
 }

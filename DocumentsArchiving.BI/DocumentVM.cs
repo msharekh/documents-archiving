@@ -8,7 +8,7 @@ using System.Web;
 
 namespace DocumentsArchiving.BI
 {
-    public class DocumentAdd
+    public class DocumentVM
     {
         [Required]
 
