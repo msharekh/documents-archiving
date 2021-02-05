@@ -31,5 +31,6 @@ namespace DocumentsArchiving.BI
 
         public string Path { get; set; }
 
+        public DocumentTypeVM DocumentType { get; set; }
     }
 }

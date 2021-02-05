@@ -31,7 +31,10 @@ namespace DocumentsArchiving.BLL
             return _path;
         }
 
-
+        public static List<DocumentVM> GetDocuments()
+        {
+            return DocumentDAL.GetDocuments();
+        }
 
         public static void InsertDocument(DocumentVM document)
         {

@@ -12,8 +12,9 @@ namespace DocumentsArchiving.Web.Controllers
     {
         // GET: Documents
         public ActionResult Index()
-        {
-            return View();
+        {           
+            var documents = DocumentBLL.GetDocuments();// db.Documents.Include(d => d.DocumentType);
+            return View(documents.ToList());
         }
         // GET: Documents/Create
         public ActionResult Create()
