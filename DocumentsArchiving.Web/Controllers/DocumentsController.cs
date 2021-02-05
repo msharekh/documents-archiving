@@ -18,7 +18,8 @@ namespace DocumentsArchiving.Web.Controllers
         // GET: Documents/Create
         public ActionResult Create()
         {
-            //ViewBag.DocumentTypeId = new SelectList(db.DocumentTypes, "DocumentTypeId", "DocumentTypeDesc");
+            List<DocumentTypeVM> documentTypes = DocumentBLL.GetDocumentTypes();
+            ViewBag.DocumentTypeId = new SelectList(documentTypes, "DocumentTypeId", "DocumentTypeDesc");
             return View();
         }
         // POST: Documents/Create

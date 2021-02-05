@@ -86,3 +86,5 @@ C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\Documen
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\DocumentsArchiving.DAL.pdb
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\DocumentsArchiving.DAL.dll.config
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\EntityFramework.xml
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\EntityFramework.SqlServer.xml
