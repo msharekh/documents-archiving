@@ -72,7 +72,6 @@ C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\System.
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\Newtonsoft.Json.xml
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\Antlr3.Runtime.pdb
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\obj\Debug\DocumentsArchiving.Web.csprojAssemblyReference.cache
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\obj\Debug\DocumentsArchiving.Web.csproj.CoreCompileInputs.cache
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\obj\Debug\DocumentsArchiving.Web.csproj.CopyComplete
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.Web\obj\Debug\DocumentsArchiving.Web.dll

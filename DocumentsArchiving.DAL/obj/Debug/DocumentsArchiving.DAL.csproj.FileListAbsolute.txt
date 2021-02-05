@@ -1,0 +1,11 @@
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.DAL\bin\Debug\DocumentsArchiving.DAL.dll.config
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.DAL\bin\Debug\DocumentsArchiving.DAL.dll
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.DAL\bin\Debug\DocumentsArchiving.DAL.pdb
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.DAL\bin\Debug\EntityFramework.dll
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.DAL\bin\Debug\EntityFramework.xml
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.csproj.CoreCompileInputs.cache
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.csproj.CopyComplete
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.dll
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.pdb
