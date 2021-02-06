@@ -1,5 +1,7 @@
 ﻿using DocumentsArchiving.BI;
 using DocumentsArchiving.BLL;
+using PagedList;
+using PagedList.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +14,22 @@ namespace DocumentsArchiving.Web.Controllers
     {
         // GET: Documents
         public ActionResult Index(string searchBy,string search,int? page)
-        {           
-            var documents = DocumentBLL.GetDocuments();// db.Documents.Include(d => d.DocumentType);
-            return View(documents.ToList());
+        {
+            var documents = DocumentBLL.GetDocuments();
+            switch (searchBy)
+            {
+                case "Subject":
+                    return View(documents.Where(x => x.Subject.Contains(search)).ToList().ToPagedList(page??1,3));
+                
+                case "SerialNumber":
+                    return View(documents.Where(x => x.SerialNumber.Contains(search)).ToList().ToPagedList(page??1,3));
+                
+                default:
+                    break;
+            }
+
+
+            return View(documents.ToList().ToPagedList(page ?? 1, 3));
         }
         // GET: Documents/Create
         public ActionResult Create()

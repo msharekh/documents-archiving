@@ -1,53 +1,70 @@
-﻿@model IEnumerable<DocumentsArchiving.BI.DocumentVM>
+﻿@using PagedList.Mvc;
+@using PagedList;
+@model IPagedList<DocumentsArchiving.BI.DocumentVM>
 
 @{
-    ViewBag.Title = "Index";
+	ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
+@using (@Html.BeginForm("Index", "Documents", FormMethod.Get))
+{
+<div>
+	<p>Please select:</p>
+	<input type="radio" id="Subject" name="searchBy" value="Subject" checked>
+	<label for="Subject">Subject</label><br>
+	<input type="radio" id="SerialNumber" name="searchBy" value="SerialNumber">
+	<label for="SerialNumber">SerialNumber</label><br>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Subject)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DocumentType.DocumentTypeDesc)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DocumentDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.SerialNumber)
-        </th>  
-        <th>
-            @Html.DisplayNameFor(model => model.Path)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Subject)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DocumentType.DocumentTypeDesc)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DocumentDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SerialNumber)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Path)
-        </td>
-         
-    </tr>
+	<input type="text" name="search" value="" />
+	<input type="submit" name="" value="Search" />
+</div>
 }
 
+<p>
+	@Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+	<tr>
+		<th>
+			@Html.DisplayNameFor(model => model.First().Subject)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.First().DocumentType.DocumentTypeDesc)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.First().DocumentDate)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.First().SerialNumber)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.First().Path)
+		</th>
+		<th></th>
+	</tr>
+
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.Subject)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.DocumentType.DocumentTypeDesc)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.DocumentDate)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.SerialNumber)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Path)
+			</td>
+
+		</tr>
+	}
+
 </table>
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, searchBy = Request.QueryString["searchBy"], search = Request.QueryString["search"] }), new PagedListRenderOptions() { Display = PagedListDisplayMode.IfNeeded, DisplayPageCountAndCurrentLocation = true })
