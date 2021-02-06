@@ -19,6 +19,10 @@ namespace DocumentsArchiving.BI
         public System.DateTime DocumentDate { get; set; }
 
         [Required]
+        [RegularExpression(@"^([0-9][0-9])/([0-9][0-9][0-9][0-9])$",
+                            ErrorMessage = "Please enter a valid format")]
+
+
         public string SerialNumber { get; set; }
 
         public string Details { get; set; }

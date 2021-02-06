@@ -13,11 +13,11 @@
 
 - Add the following meta data:
 
-    - Subject (Mandatory)
+    - Subject (Mandatory)  --ok
 
-    - Document type (list of some types like: Incoming, Outgoing …. Etc.) (Mandatory)
+    - Document type (list of some types like: Incoming, Outgoing …. Etc.) (Mandatory) --ok
 
-    - Document date (Mandatory and should be less than or equal the current date)
+    - Document date (Mandatory and should be less than or equal the current date) --ok
 
     - Serial Number (Mandatory with this format 00/0000 Like: 25/2014)
 

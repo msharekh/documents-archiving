@@ -1,3 +1,4 @@
 documents archiving.sln
-.vs/documents archiving/config/*
-DocumentsArchiving.Web/bin/*
+.vs/documents archiving/config
+DocumentsArchiving.Web/bin
+DocumentsArchiving.BI/bin/Debug
