@@ -10,25 +10,16 @@ namespace DocumentsArchiving.BI
 {
     public class DocumentVM
     {
-        [Required]
+        public int DocumentId { get; set; }
 
         public string Subject { get; set; }
-
-        [Required]
 
         public int DocumentTypeId { get; set; }
 
         public System.DateTime DocumentDate { get; set; }
 
-        [Required]
-
         public string SerialNumber { get; set; }
-
-        public string Details { get; set; }
-
-
-        public HttpPostedFileBase File { get; set; }
-
+ 
         public string Path { get; set; }
 
         public DocumentTypeVM DocumentType { get; set; }

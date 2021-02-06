@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocumentAddVM.cs" />
     <Compile Include="DocumentVM.cs" />
     <Compile Include="DocumentTypeVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

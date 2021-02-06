@@ -11,7 +11,7 @@ namespace DocumentsArchiving.Web.Controllers
     public class DocumentsController : Controller
     {
         // GET: Documents
-        public ActionResult Index()
+        public ActionResult Index(string searchBy,string search,int? page)
         {           
             var documents = DocumentBLL.GetDocuments();// db.Documents.Include(d => d.DocumentType);
             return View(documents.ToList());
@@ -23,12 +23,14 @@ namespace DocumentsArchiving.Web.Controllers
             ViewBag.DocumentTypeId = new SelectList(documentTypes, "DocumentTypeId", "DocumentTypeDesc");
             return View();
         }
+        
+        
         // POST: Documents/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(DocumentVM document)
+        public ActionResult Create(DocumentAddVM document)
         {
             List<DocumentTypeVM> documentTypes = DocumentBLL.GetDocumentTypes();
             ViewBag.DocumentTypeId = new SelectList(documentTypes, "DocumentTypeId", "DocumentTypeDesc", document.DocumentTypeId);

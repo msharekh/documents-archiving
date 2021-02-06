@@ -36,7 +36,7 @@ namespace DocumentsArchiving.BLL
             return DocumentDAL.GetDocuments();
         }
 
-        public static void InsertDocument(DocumentVM document)
+        public static void InsertDocument(DocumentAddVM document)
         {
             DocumentDAL.InsertDocument(document);
         }

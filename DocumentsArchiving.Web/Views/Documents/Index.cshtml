@@ -22,10 +22,7 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.SerialNumber)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Details)
-        </th>
+        </th>  
         <th>
             @Html.DisplayNameFor(model => model.Path)
         </th>
@@ -47,16 +44,9 @@
             @Html.DisplayFor(modelItem => item.SerialNumber)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Details)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.Path)
         </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-        </td>
+         
     </tr>
 }
 

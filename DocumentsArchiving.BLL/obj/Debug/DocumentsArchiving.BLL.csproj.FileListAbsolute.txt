@@ -1,5 +1,3 @@
-C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\obj\Debug\DocumentsArchiving.BLL.csprojAssemblyReference.cache
-C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\obj\Debug\DocumentsArchiving.BLL.csproj.CoreCompileInputs.cache
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\bin\Debug\DocumentsArchiving.BLL.dll
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\bin\Debug\DocumentsArchiving.BLL.pdb
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\bin\Debug\DocumentsArchiving.BI.dll
@@ -9,6 +7,8 @@ C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\bin\Debug\D
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\bin\Debug\DocumentsArchiving.DAL.pdb
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\bin\Debug\DocumentsArchiving.DAL.dll.config
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\bin\Debug\EntityFramework.xml
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\obj\Debug\DocumentsArchiving.BLL.csprojAssemblyReference.cache
+C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\obj\Debug\DocumentsArchiving.BLL.csproj.CoreCompileInputs.cache
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\obj\Debug\DocumentsArchiving.BLL.csproj.CopyComplete
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\obj\Debug\DocumentsArchiving.BLL.dll
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\obj\Debug\DocumentsArchiving.BLL.pdb

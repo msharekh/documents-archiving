@@ -11,7 +11,7 @@ namespace DocumentsArchiving.DAL
     {
 
         //private DocDBEntities db = new DocDBEntities();
-        public static void InsertDocument(DocumentVM document)
+        public static void InsertDocument(DocumentAddVM document)
         {
             using (var repo = new GenericRepository<Document>())
             {
@@ -55,7 +55,7 @@ namespace DocumentsArchiving.DAL
                             Subject = item.Subject,
                             SerialNumber = item.SerialNumber,
                             DocumentDate = item.DocumentDate,
-                            Details = item.Details,
+                            //Details = item.Details,
                             DocumentTypeId = item.DocumentTypeId,
                             Path = item.Path,
                             DocumentType = new DocumentTypeVM() {  DocumentTypeId=item.DocumentType.DocumentTypeId, DocumentTypeDesc=item.DocumentType.DocumentTypeDesc}
