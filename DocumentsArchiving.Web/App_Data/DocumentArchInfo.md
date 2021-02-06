@@ -19,9 +19,9 @@
 
     - Document date (Mandatory and should be less than or equal the current date) --ok
 
-    - Serial Number (Mandatory with this format 00/0000 Like: 25/2014)
+    - Serial Number (Mandatory with this format 00/0000 Like: 25/2014) --ok
 
-    - Details (Not mandatory)
+    - Details (Not mandatory) --ok
 
  
 
@@ -29,11 +29,11 @@
 
 - Use the mandatory fields as a search criteria 
 
-    - Subject
+    - Subject  --ok
 
-    - Document type
+    - Document type (1)
 
-    - Serial Number
+    - Serial Number  --ok
 
 - Display the search result with this field:
 
@@ -43,9 +43,9 @@
 
     - Document date
 
-- A facility to sort the search result based on any Serial or Subject.
+- A facility to sort the search result based on any Serial or Subject.(2)
 
-- A facility to download the document.
+- A facility to download the document.  (3)
 
  ======================================
 
