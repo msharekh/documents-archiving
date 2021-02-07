@@ -43,7 +43,7 @@
 
     - Document date
 
-- A facility to sort the search result based on any Serial or Subject.(2)
+- A facility to sort the search result based on any Serial or Subject.	(2)
 
 - A facility to download the document.  (3)
 

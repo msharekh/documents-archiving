@@ -9,16 +9,61 @@
 <h2>Index</h2>
 @using (@Html.BeginForm("Index", "Documents", FormMethod.Get))
 {
-<div>
-	<p>Please select:</p>
-	<input type="radio" id="Subject" name="searchBy" value="Subject" checked>
-	<label for="Subject">Subject</label><br>
-	<input type="radio" id="SerialNumber" name="searchBy" value="SerialNumber">
-	<label for="SerialNumber">SerialNumber</label><br>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="col-md-12">
+						<input type="radio" id="Subject" name="searchBy" value="Subject" checked>
+						<label for="Subject">Subject</label>
+					</div>
+					<div class="col-md-12">
+						<input type="radio" id="SerialNumber" name="searchBy" value="SerialNumber">
+						<label for="SerialNumber">SerialNumber</label>
+					</div>
+					
+				</div>
+				<div class="col-md-4">
+					<input class="form-control" type="text" name="search" value="" />
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<input type="text" name="search" value="" />
-	<input type="submit" name="" value="Search" />
-</div>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-2">					
+					<div class="col-md-12">
+						<input type="radio" id="DocumentType" name="searchBy" value="DocumentType">
+						<label for="DocumentType">DocumentType</label>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<div class="col-md-10">
+							@Html.DropDownList("DocumentTypeId", (IEnumerable<SelectListItem>)ViewBag.DocumentTypeId)
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div>
+		<p>Search:</p>
+
+
+
+
+		<div class="form-group">
+
+			<div class="col-md-10">
+				@Html.DropDownList("DocumentTypeId", (IEnumerable<SelectListItem>)ViewBag.DocumentTypeId)
+			</div>
+		</div>
+		<input type="submit" name="" value="Search" />
+	</div>
 }
 
 <p>

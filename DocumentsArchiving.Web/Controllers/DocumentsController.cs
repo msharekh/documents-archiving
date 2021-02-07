@@ -28,6 +28,8 @@ namespace DocumentsArchiving.Web.Controllers
                     break;
             }
 
+            List<DocumentTypeVM> documentTypes = DocumentBLL.GetDocumentTypes();
+            ViewBag.DocumentTypeId = new SelectList(documentTypes, "DocumentTypeId", "DocumentTypeDesc");
 
             return View(documents.ToList().ToPagedList(page ?? 1, 3));
         }
