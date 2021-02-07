@@ -12,3 +12,16 @@ C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\obj\Debug\D
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\obj\Debug\DocumentsArchiving.BLL.csproj.CopyComplete
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\obj\Debug\DocumentsArchiving.BLL.dll
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.BLL\obj\Debug\DocumentsArchiving.BLL.pdb
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BLL\bin\Debug\DocumentsArchiving.BLL.dll
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BLL\bin\Debug\DocumentsArchiving.BLL.pdb
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BLL\bin\Debug\DocumentsArchiving.BI.dll
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BLL\bin\Debug\DocumentsArchiving.DAL.dll
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BLL\bin\Debug\EntityFramework.dll
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BLL\bin\Debug\DocumentsArchiving.BI.pdb
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BLL\bin\Debug\DocumentsArchiving.DAL.pdb
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BLL\bin\Debug\DocumentsArchiving.DAL.dll.config
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BLL\bin\Debug\EntityFramework.xml
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BLL\obj\Debug\DocumentsArchiving.BLL.csprojAssemblyReference.cache
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BLL\obj\Debug\DocumentsArchiving.BLL.csproj.CopyComplete
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BLL\obj\Debug\DocumentsArchiving.BLL.dll
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BLL\obj\Debug\DocumentsArchiving.BLL.pdb

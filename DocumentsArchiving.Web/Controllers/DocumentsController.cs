@@ -60,7 +60,7 @@ namespace DocumentsArchiving.Web.Controllers
                 }
                 catch (Exception ex)    
                 {
-                    ViewBag.Message = "File upload faild " + ex.Message;
+                    ViewBag.Message = "File upload faild ";
                     return View(document);
                 }
                 //return RedirectToAction("Index");

@@ -20,7 +20,7 @@ namespace DocumentsArchiving.BI
 
         [Required]
         [RegularExpression(@"^([0-9][0-9])/([0-9][0-9][0-9][0-9])$",
-                            ErrorMessage = "Please enter a valid format")]
+                            ErrorMessage = "Please enter a valid format 00/0000 ")]
 
 
         public string SerialNumber { get; set; }

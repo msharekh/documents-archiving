@@ -12,3 +12,16 @@ C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.DAL\obj\Debug\D
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.csproj.CopyComplete
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.dll
 C:\Users\MSH\source\repos\documents archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.pdb
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\bin\Debug\DocumentsArchiving.DAL.dll.config
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\bin\Debug\DocumentsArchiving.DAL.dll
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\bin\Debug\DocumentsArchiving.DAL.pdb
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\bin\Debug\DocumentsArchiving.BI.dll
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\bin\Debug\EntityFramework.dll
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\bin\Debug\DocumentsArchiving.BI.pdb
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\bin\Debug\EntityFramework.xml
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.csprojAssemblyReference.cache
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.csproj.CopyComplete
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.dll
+D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.pdb
