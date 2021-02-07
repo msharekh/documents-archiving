@@ -10,26 +10,32 @@ using System.Web;
 
 namespace DocumentsArchiving.BLL
 {
-    public class DocumentBLL{
+    public class DocumentBLL
+    {
 
-        public static string UploadFile(HttpPostedFileBase file, string path){
+        public static string UploadFile(HttpPostedFileBase file, string path)
+        {
 
-            string _fileName = Path.GetFileName(file.FileName);
-
-            string _path = Path.Combine(path, _fileName);
+            string _path = "";
 
 
-            if (file.ContentLength > 0){
+            if (file.ContentLength > 0)
+            {
+                string _fileName = Path.GetFileName(file.FileName);
+
+                _path = Path.Combine(path, _fileName);
 
                 file.SaveAs(_path);
             }
             else
             {
-                throw new Exception("file has 0 size");
+                throw new Exception("Not valid file upload!!");
             }
 
             return _path;
         }
+
+
 
         public static List<DocumentVM> GetDocuments()
         {

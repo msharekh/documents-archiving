@@ -27,6 +27,7 @@ namespace DocumentsArchiving.BI
 
         public string Details { get; set; }
 
+        [Required (ErrorMessage = "Not valid file upload!!")]
         public HttpPostedFileBase File { get; set; }
 
         public string Path { get; set; }

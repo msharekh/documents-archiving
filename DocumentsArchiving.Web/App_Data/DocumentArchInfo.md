@@ -31,7 +31,7 @@
 
     - Subject  --ok
 
-    - Document type (1)
+    - Document type (1) --ok
 
     - Serial Number  --ok
 
@@ -43,7 +43,9 @@
 
     - Document date
 
-- A facility to sort the search result based on any Serial or Subject.	(2)
+- A facility to sort the search result based on any (2) --ok
+    - Subject.	
+    - Serial 
 
 - A facility to download the document.  (3)
 
@@ -237,6 +239,7 @@ Install-Package PagedList.Mvc -Version 4.5.0
     - UploadFile(doc)
 
     - DownloadFile(docId)
+
 
 - db funcs
 

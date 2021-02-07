@@ -17,10 +17,10 @@
 	</div>
 	<div class="form-group">
 		<label for="SerialNumber">SerialNumber:</label>
-		<input type="text" name="SerialNumber" value="@ViewBag.SerialNumber" class="form-control" />
+		<input type="text" name="Serial Number" value="@ViewBag.SerialNumber" class="form-control" />
 	</div>
 	<div class="form-group">
-		<label for="DocumentTypeId">DocumentTypeId:</label>
+		<label for="DocumentTypeId">Document Type:</label>
 		@Html.DropDownList("DocumentTypeId", (IEnumerable<SelectListItem>)ViewBag.DocumentTypeId, "Please select", new { @class = "form-control" })
 	</div>
 	<div class="form-group">
@@ -35,19 +35,34 @@
 <table class="table display" id="maintable">
 	<tr>
 		<th>
-			@Html.DisplayNameFor(model => model.First().Subject)
+			@Html.ActionLink("Subject", "Index", new
+			{
+		   Sorting_Order = ViewBag.SortingName,
+		   CurrentSort = ViewBag.CurrentSort,
+		   Subject = Request.QueryString["Subject"],
+		   SerialNumber = Request.QueryString["SerialNumber"],
+		   DocumentTypeId = Request.QueryString["DocumentTypeId"]
+	   })
 		</th>
-		<th>
-			@Html.DisplayNameFor(model => model.First().DocumentType.DocumentTypeDesc)
-		</th>
+		@*<th>
+				@Html.DisplayNameFor(model => model.First().DocumentType.DocumentTypeDesc)
+			</th>*@
 		<th>
 			@Html.DisplayNameFor(model => model.First().DocumentDate)
 		</th>
 		<th>
-			@Html.DisplayNameFor(model => model.First().SerialNumber)
+			@Html.ActionLink("Serial-Number", "Index", new
+			{
+		   sortOrder = "SerialNumber",
+		   CurrentSort = ViewBag.CurrentSort,
+		   Subject = Request.QueryString["Subject"],
+		   SerialNumber = Request.QueryString["SerialNumber"],
+		   DocumentTypeId = Request.QueryString["DocumentTypeId"]
+	   })
+
 		</th>
 		<th>
-			@Html.DisplayNameFor(model => model.First().Path)
+			 
 		</th>
 		<th></th>
 	</tr>
@@ -58,9 +73,9 @@
 			<td>
 				@Html.DisplayFor(modelItem => item.Subject)
 			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.DocumentType.DocumentTypeDesc)
-			</td>
+			@*<td>
+					@Html.DisplayFor(modelItem => item.DocumentType.DocumentTypeDesc)
+				</td>*@
 			<td>
 				@Html.DisplayFor(modelItem => item.DocumentDate)
 			</td>
@@ -68,8 +83,10 @@
 				@Html.DisplayFor(modelItem => item.SerialNumber)
 			</td>
 			<td>
-				@Html.DisplayFor(modelItem => item.Path)
+				@*@Html.DisplayFor(modelItem => item.Path)*@
+				@Html.ActionLink("Download", "DownloadFile", new { path = item.Path })
 			</td>
+
 
 		</tr>
 	}

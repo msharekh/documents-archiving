@@ -4,6 +4,7 @@ using PagedList;
 using PagedList.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -13,13 +14,16 @@ namespace DocumentsArchiving.Web.Controllers
     public class DocumentsController : Controller
     {
         // GET: Documents
-        public ActionResult Index(string Subject, string SerialNumber, string DocumentTypeId, int? page)
+        public ActionResult Index(string sortOrder, string CurrentSort, string Subject, string SerialNumber, string DocumentTypeId, int? page)
         {
             var documents = DocumentBLL.GetDocuments();
+            int pageSize = int.Parse(ConfigurationManager.AppSettings["pageSize"]);
+            int pageIndex = 1;
 
+            /*filtering*/
             if (!string.IsNullOrEmpty(Subject))
             {
-                documents= documents
+                documents = documents
                     .Where(x => x.Subject.Contains(Subject)).ToList();
             }
             if (!string.IsNullOrEmpty(SerialNumber))
@@ -32,15 +36,38 @@ namespace DocumentsArchiving.Web.Controllers
                 documents = documents
                     .Where(x => x.DocumentTypeId.Equals(int.Parse(DocumentTypeId))).ToList();
             }
-           
+
+            /*sorting*/
+            sortOrder = string.IsNullOrEmpty(sortOrder) ? "Subject" : sortOrder;
+
+            switch (sortOrder)
+            {
+                case "Subject":
+                    if (sortOrder.Equals(CurrentSort))
+                        documents = documents.OrderByDescending(x => x.Subject).ToList();
+                    else
+                        documents = documents.OrderBy(x => x.Subject).ToList();
+
+                    break;
+                case "SerialNumber":
+                    if (sortOrder.Equals(CurrentSort))
+                        documents = documents.OrderByDescending(x => x.SerialNumber).ToList();
+                    else
+                        documents = documents.OrderBy(x => x.SerialNumber).ToList();
+                    break;
+                default:
+                    break;
+            }
 
             List<DocumentTypeVM> documentTypes = DocumentBLL.GetDocumentTypes();
             //documentTypes.Add(new DocumentTypeVM() { DocumentTypeId = 0, DocumentTypeDesc = "--select type--" });
             ViewBag.Subject = Subject;
             ViewBag.SerialNumber = SerialNumber;
-            ViewBag.DocumentTypeId = new SelectList(documentTypes, "DocumentTypeId", "DocumentTypeDesc",0);
- 
-            return View(documents.ToList().ToPagedList(page ?? 1, 5));
+            ViewBag.DocumentTypeId = new SelectList(documentTypes, "DocumentTypeId", "DocumentTypeDesc", 0);
+            ViewBag.CurrentSort = sortOrder;
+
+            //paging;
+            return View(documents.ToList().ToPagedList(page ?? pageIndex, pageSize));
         }
         // GET: Documents/Create
         public ActionResult Create()
@@ -49,8 +76,8 @@ namespace DocumentsArchiving.Web.Controllers
             ViewBag.DocumentTypeId = new SelectList(documentTypes, "DocumentTypeId", "DocumentTypeDesc");
             return View();
         }
-        
-        
+
+
         // POST: Documents/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
@@ -69,7 +96,7 @@ namespace DocumentsArchiving.Web.Controllers
                     ViewBag.Message = "File upload SUCCESS ";
                     return RedirectToAction("Index");
                 }
-                catch (Exception ex)    
+                catch (Exception ex)
                 {
                     ViewBag.Message = "File upload faild ";
                     return View(document);
@@ -78,8 +105,17 @@ namespace DocumentsArchiving.Web.Controllers
             }
             return View(document);
         }
-        // POST: Documents/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+
+
+        public FileResult DownloadFile(string path)
+        {
+           
+            //Read the File data into Byte Array.
+            byte[] bytes = System.IO.File.ReadAllBytes(path);
+
+            string fileName = path.Substring(path.LastIndexOf('\\') + 1);
+            //Send the File to Download.
+            return File(bytes, "application/octet-stream", fileName);
+        }
     }
 }

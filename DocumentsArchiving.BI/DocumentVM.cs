@@ -16,10 +16,12 @@ namespace DocumentsArchiving.BI
 
         public int DocumentTypeId { get; set; }
 
+        [Display(Name = "Document-Date")]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public System.DateTime DocumentDate { get; set; }
 
-        public string SerialNumber { get; set; }
+        [Display(Name = "Serial-Number ")]
+            public string SerialNumber { get; set; }
  
         public string Path { get; set; }
 
