@@ -10,9 +10,12 @@ namespace DocumentsArchiving.Web
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
- 
+
             bundles.Add(new ScriptBundle("~/bundles/datepicker").Include(
                         "~/Scripts/bootstrap-datepicker.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/dataTables").Include(
+                        "~/Scripts/jquery.dataTables.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -27,8 +30,8 @@ namespace DocumentsArchiving.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css")); 
-            
+                      "~/Content/site.css"));
+
             bundles.Add(new StyleBundle("~/Content/datepicker").Include(
                       "~/Content/bootstrap-datepicker.min.css"));
         }

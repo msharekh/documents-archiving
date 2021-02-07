@@ -40,7 +40,7 @@ namespace DocumentsArchiving.Web.Controllers
             ViewBag.SerialNumber = SerialNumber;
             ViewBag.DocumentTypeId = new SelectList(documentTypes, "DocumentTypeId", "DocumentTypeDesc",0);
  
-            return View(documents.ToList().ToPagedList(page ?? 1, 3));
+            return View(documents.ToList().ToPagedList(page ?? 1, 5));
         }
         // GET: Documents/Create
         public ActionResult Create()
