@@ -108,8 +108,8 @@ namespace DocumentsArchiving.Web.Controllers
 
 
         public FileResult DownloadFile(string path)
-        {
-           
+        {           
+            
             //Read the File data into Byte Array.
             byte[] bytes = System.IO.File.ReadAllBytes(path);
 

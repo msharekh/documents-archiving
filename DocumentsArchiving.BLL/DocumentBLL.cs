@@ -35,8 +35,6 @@ namespace DocumentsArchiving.BLL
             return _path;
         }
 
-
-
         public static List<DocumentVM> GetDocuments()
         {
             return DocumentDAL.GetDocuments();

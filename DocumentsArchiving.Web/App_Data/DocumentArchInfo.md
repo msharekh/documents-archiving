@@ -25,7 +25,7 @@
 
  
 
-###  *page 2* (search saved documents):
+###  *page 2* (search and dopwnload saved documents):
 
 - Use the mandatory fields as a search criteria 
 
@@ -62,21 +62,13 @@
  
 
 |fld|typ|q|n| 
-
 |-|-|-|-|
-
 |Subject|txt|req||
-
 |DocumentType|ddl|req||
-
 |DocumentDate|dateTxt|req||
-
 |SerialNumber|txt|req||
-
 |Details|textArea|||
-
 |File|fileUpload|||
-
 |Submit|btn|||
 
  
@@ -86,15 +78,10 @@
 #### serach:
 
 |fld|typ|q|n| 
-
 |-|-|-|-|
-
 |Subject|txt|req||
-
 |DocumentType|ddl|req||
-
 |SerialNumber|txt|req||
-
 |Search|btn|||
 
  
@@ -102,15 +89,10 @@
 #### grid:
 
 |fld|typ|q|n| 
-
 |-|-|-|-|
-
 |Subject|fld|req||
-
 |DocumentDate|fld|req||
-
 |SerialNumber|fld|req||
-
 |Details|fld|||
 
  
@@ -139,40 +121,17 @@ Install-Package PagedList.Mvc -Version 4.5.0
  
 
 |fld|typ|q|n| 
-
 |-|-|-|-|
-
 |DocumentId|int|req|key|
-
 |Subject|int|req||
-
 |DocumentType|string|req||
-
 |DocumentDate|datetime|req||
-
 |SerialNumber|string|req||
-
 |Details|string|||
-
  
 
  
 
- 
-
-|fld|typ|q|n| 
-
-|-|-|-|-|
-
-|Subject|int|req||
-
-|DocumentType|string|req||
-
-|DocumentDate|datetime|req|should be less than or equal the current date|
-
-|SerialNumber|string|req|format 00/0000 Like: 25/2014|
-
-|Details|string|||
 
  
  
@@ -185,53 +144,41 @@ Install-Package PagedList.Mvc -Version 4.5.0
 - DocumentAddVM
 
 |fld|typ|q|n| 
-
 |-|-|-|-|
-
 |DocumentId|int|req|key|
-
 |Subject|int|req||
-
 |DocumentType|string|req||
-
 |DocumentDate|datetime|req||
-
 |SerialNumber|string|req||
-
 |Details|string|||
-
 |File|HttpPostedFileBase|||
-
 |Path|string|||
-
 |DocumentType|DocumentTypeVM|||
-
 
 - DocumentVM
 
 |fld|typ|q|n| 
-
 |-|-|-|-|
-
 |DocumentId|int|req|key|
-
 |Subject|int|req||
-
 |DocumentType|string|req||
-
 |DocumentDate|datetime|req||
-
 |SerialNumber|string|req||
-
 |Details|string|||
-
 |File|HttpPostedFileBase|||
-
 |Path|string|||
-
 |DocumentType|DocumentTypeVM|||
 
 
+ - DocumentAddVM
+
+|fld|typ|q|n| 
+|-|-|-|-|
+|Subject|int|req||
+|DocumentType|string|req||
+|DocumentDate|datetime|req|should be less than or equal the current date|
+|SerialNumber|string|req|format 00/0000 Like: 25/2014|
+|Details|string|||
 ### BLL
 
 - file funcs
@@ -243,23 +190,16 @@ Install-Package PagedList.Mvc -Version 4.5.0
 
 - db funcs
 
-    - InsertFile(doc)
+    - InsertDocument(doc)
 
-    - GetFileBySubject(subject)
+    - GetDocuments()
 
-    - GetFileByDocumentType(documentType)
+    - GetDocumentTypes()
 
-    - GetFileBySerialNumber(serialNumber)
 
  
 
 ### DAL
-
-- file funcs
-
-    - UploadFile(doc)
-
-    - DownloadFile(docId)
 
 - db funcs
 
@@ -279,30 +219,17 @@ Install-Package PagedList.Mvc -Version 4.5.0
 
 ### Web functions:
 
-    - GET AddDoc
-
-    - POST AddDoc(doc)
-
-    - GET SearchDoc
-
-    - GET SearchDoc(subject,documentType,serialNumber)
+- GET Index
+- GET Create
+- POST Create(document) 
+- GET DownloadFile(path)
 
 
 
 ## **database**
 
- C:\Users\MSH\AppData\Local\Microsoft\VisualStudio\SSDT
-Data Source=(localdb)\ProjectsV13;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
 
-    <add name="DocArchDBEntities" connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(LocalDB)\MSSQLLocalDB;attachdbfilename=|DataDirectory|\DocArchDB.mdf;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
-
-Data Source=(localdb)\ProjectsV13;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
-
-
-Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DocDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
-
-
-- MSSQL Server -  DocArchDB 
+- MSSQL Server -  DocDB 
 
 #### tables: 
 
@@ -322,7 +249,7 @@ Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DocDB;Integrated Security=Tru
 
  
 
-- Transaction
+- Transaction (suggested)
 
     - DocumentId (int) (rqg) (key)        
 
