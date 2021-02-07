@@ -7,63 +7,26 @@
 }
 
 <h2>Index</h2>
-@using (@Html.BeginForm("Index", "Documents", FormMethod.Get))
+@using (@Html.BeginForm("Index", "Documents", FormMethod.Get, new { @class = "form-inline" }))
 {
-	<div class="panel panel-default">
-		<div class="panel-body">
-			<div class="row">
-				<div class="col-md-2">
-					<div class="col-md-12">
-						<input type="radio" id="Subject" name="searchBy" value="Subject" checked>
-						<label for="Subject">Subject</label>
-					</div>
-					<div class="col-md-12">
-						<input type="radio" id="SerialNumber" name="searchBy" value="SerialNumber">
-						<label for="SerialNumber">SerialNumber</label>
-					</div>
-					
-				</div>
-				<div class="col-md-4">
-					<input class="form-control" type="text" name="search" value="" />
-				</div>
-			</div>
-		</div>
+
+
+	<div class="form-group">
+		<label for="Subject">Subject:</label>
+		<input type="text" name="Subject" value="@ViewBag.Subject" class="form-control" />
+	</div>
+	<div class="form-group">
+		<label for="SerialNumber">SerialNumber:</label>
+		<input type="text" name="SerialNumber" value="@ViewBag.SerialNumber" class="form-control" />
+	</div>
+	<div class="form-group">
+		<label for="DocumentTypeId">DocumentTypeId:</label>
+		@Html.DropDownList("DocumentTypeId", (IEnumerable<SelectListItem>)ViewBag.DocumentTypeId, "Please select", new { @class = "form-control" })
+	</div>
+	<div class="form-group">
+		<button type="submit" class="btn btn-default">Search</button>	
 	</div>
 
-	<div class="panel panel-default">
-		<div class="panel-body">
-			<div class="row">
-				<div class="col-md-2">					
-					<div class="col-md-12">
-						<input type="radio" id="DocumentType" name="searchBy" value="DocumentType">
-						<label for="DocumentType">DocumentType</label>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="form-group">
-						<div class="col-md-10">
-							@Html.DropDownList("DocumentTypeId", (IEnumerable<SelectListItem>)ViewBag.DocumentTypeId)
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div>
-		<p>Search:</p>
-
-
-
-
-		<div class="form-group">
-
-			<div class="col-md-10">
-				@Html.DropDownList("DocumentTypeId", (IEnumerable<SelectListItem>)ViewBag.DocumentTypeId)
-			</div>
-		</div>
-		<input type="submit" name="" value="Search" />
-	</div>
 }
 
 <p>
@@ -112,4 +75,4 @@
 	}
 
 </table>
-@Html.PagedListPager(Model, page => Url.Action("Index", new { page, searchBy = Request.QueryString["searchBy"], search = Request.QueryString["search"] }), new PagedListRenderOptions() { Display = PagedListDisplayMode.IfNeeded, DisplayPageCountAndCurrentLocation = true })
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, Subject = Request.QueryString["Subject"], SerialNumber = Request.QueryString["SerialNumber"], DocumentTypeId = Request.QueryString["DocumentTypeId"] }), new PagedListRenderOptions() { Display = PagedListDisplayMode.IfNeeded, DisplayPageCountAndCurrentLocation = true })

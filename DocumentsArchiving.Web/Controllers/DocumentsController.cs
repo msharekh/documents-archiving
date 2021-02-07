@@ -13,24 +13,33 @@ namespace DocumentsArchiving.Web.Controllers
     public class DocumentsController : Controller
     {
         // GET: Documents
-        public ActionResult Index(string searchBy,string search,int? page)
+        public ActionResult Index(string Subject, string SerialNumber, string DocumentTypeId, int? page)
         {
             var documents = DocumentBLL.GetDocuments();
-            switch (searchBy)
+
+            if (!string.IsNullOrEmpty(Subject))
             {
-                case "Subject":
-                    return View(documents.Where(x => x.Subject.Contains(search)).ToList().ToPagedList(page??1,3));
-                
-                case "SerialNumber":
-                    return View(documents.Where(x => x.SerialNumber.Contains(search)).ToList().ToPagedList(page??1,3));
-                
-                default:
-                    break;
+                documents= documents
+                    .Where(x => x.Subject.Contains(Subject)).ToList();
             }
+            if (!string.IsNullOrEmpty(SerialNumber))
+            {
+                documents = documents
+                    .Where(x => x.SerialNumber.Contains(SerialNumber)).ToList();
+            }
+            if (!string.IsNullOrEmpty(DocumentTypeId))
+            {
+                documents = documents
+                    .Where(x => x.DocumentTypeId.Equals(int.Parse(DocumentTypeId))).ToList();
+            }
+           
 
             List<DocumentTypeVM> documentTypes = DocumentBLL.GetDocumentTypes();
-            ViewBag.DocumentTypeId = new SelectList(documentTypes, "DocumentTypeId", "DocumentTypeDesc");
-
+            //documentTypes.Add(new DocumentTypeVM() { DocumentTypeId = 0, DocumentTypeDesc = "--select type--" });
+            ViewBag.Subject = Subject;
+            ViewBag.SerialNumber = SerialNumber;
+            ViewBag.DocumentTypeId = new SelectList(documentTypes, "DocumentTypeId", "DocumentTypeDesc",0);
+ 
             return View(documents.ToList().ToPagedList(page ?? 1, 3));
         }
         // GET: Documents/Create
