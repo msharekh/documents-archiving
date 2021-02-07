@@ -6,7 +6,7 @@
 	ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>documents</h2>
 @using (@Html.BeginForm("Index", "Documents", FormMethod.Get, new { @class = "form-inline" }))
 {
 
@@ -16,8 +16,8 @@
 		<input type="text" name="Subject" value="@ViewBag.Subject" class="form-control" />
 	</div>
 	<div class="form-group">
-		<label for="SerialNumber">SerialNumber:</label>
-		<input type="text" name="Serial Number" value="@ViewBag.SerialNumber" class="form-control" />
+		<label for="SerialNumber">Serial Number:</label>
+		<input type="text" name="SerialNumber" value="@ViewBag.SerialNumber" class="form-control" />
 	</div>
 	<div class="form-group">
 		<label for="DocumentTypeId">Document Type:</label>
@@ -28,7 +28,7 @@
 	</div>
 
 }
-
+<hr />
 <p>
 	@Html.ActionLink("Create New", "Create")
 </p>
