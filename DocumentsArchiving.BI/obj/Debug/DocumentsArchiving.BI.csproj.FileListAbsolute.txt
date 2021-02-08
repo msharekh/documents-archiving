@@ -7,4 +7,3 @@ D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BI\bin\Debug\Document
 D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BI\bin\Debug\DocumentsArchiving.BI.pdb
 D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BI\obj\Debug\DocumentsArchiving.BI.dll
 D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BI\obj\Debug\DocumentsArchiving.BI.pdb
-D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BI\obj\Debug\DocumentsArchiving.BI.csprojAssemblyReference.cache

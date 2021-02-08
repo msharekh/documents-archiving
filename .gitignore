@@ -3,3 +3,4 @@ documents archiving.sln
 DocumentsArchiving.Web/bin
 DocumentsArchiving.BI/bin/Debug
 .vs/documents archiving/v16/Server/sqlite3/db.lock
+.vs/documents archiving/v16/Server/sqlite3/storage.ide-wal

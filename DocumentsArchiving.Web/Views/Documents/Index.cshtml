@@ -44,9 +44,9 @@
 		   DocumentTypeId = Request.QueryString["DocumentTypeId"]
 	   })
 		</th>
-		@*<th>
+		<th>
 				@Html.DisplayNameFor(model => model.First().DocumentType.DocumentTypeDesc)
-			</th>*@
+			</th>
 		<th>
 			@Html.DisplayNameFor(model => model.First().DocumentDate)
 		</th>
@@ -73,9 +73,9 @@
 			<td>
 				@Html.DisplayFor(modelItem => item.Subject)
 			</td>
-			@*<td>
+			<td>
 					@Html.DisplayFor(modelItem => item.DocumentType.DocumentTypeDesc)
-				</td>*@
+				</td>
 			<td>
 				@Html.DisplayFor(modelItem => item.DocumentDate)
 			</td>

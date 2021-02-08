@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -58,7 +59,7 @@ namespace DocumentsArchiving.DAL
                             //Details = item.Details,
                             DocumentTypeId = item.DocumentTypeId,
                             Path = item.Path,
-                            DocumentType = new DocumentTypeVM() {  DocumentTypeId=item.DocumentType.DocumentTypeId, DocumentTypeDesc=item.DocumentType.DocumentTypeDesc}
+                            DocumentType = new DocumentTypeVM() { DocumentTypeId = item.DocumentType.DocumentTypeId, DocumentTypeDesc = item.DocumentType.DocumentTypeDesc }
 
                         }
                      );
@@ -85,8 +86,63 @@ namespace DocumentsArchiving.DAL
                      );
                 }
                 return documentTypeVMs;
-                ;
+
             }
+        }
+
+
+
+        public static List<DocumentVM> GetDocumentsByFilter(string searchBy, string searchValue, bool enablePaging, int? pageSize, int? skipCount, string orderByAttrName, bool orderByDesc, string UserId, bool showAll = false)
+        {
+
+            using (var repo = new GenericRepository<Document>())
+            {
+
+                int? RowsCount = 0;
+                int? pagesCount = 0;
+
+                List<Expression<Func<Document, bool>>> filters = new List<Expression<Func<Document, bool>>>();
+                if (!string.IsNullOrEmpty(searchBy))
+                {
+                    switch (searchBy)
+                    {
+                        case "Subject":
+                            filters.Add(x => x.Subject.Contains(searchValue));
+                            break;
+                        case "SerialNumber":
+                            filters.Add(x => x.SerialNumber.Contains(searchValue));
+                            break;
+                        case "DocumentTypeId":
+                            filters.Add(x => x.DocumentTypeId.ToString().Contains(searchValue));
+                            break;
+                        default:
+                            break;
+                    }
+
+                }
+                else
+                {                    
+                    filters.Add(x => true);
+                }
+
+                var documents = repo.GetByFiltersDataTables(filters, orderByAttrName, orderByDesc, out RowsCount, pageSize, skipCount).Select(x => new BI.DocumentVM
+                {
+                    Subject = x.Subject,
+                    SerialNumber = x.SerialNumber,
+                    DocumentDate = x.DocumentDate,
+                    //Details = item.Details,
+                    DocumentTypeId = x.DocumentTypeId,
+                    Path = x.Path,
+                    DocumentType = new DocumentTypeVM() { DocumentTypeId = x.DocumentType.DocumentTypeId, DocumentTypeDesc = x.DocumentType.DocumentTypeDesc }
+                }).ToList().OrderByDescending(x => x.DocumentDate).ToList();
+
+
+
+                return documents;
+
+            }
+
+
         }
     }
 }

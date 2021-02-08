@@ -16,25 +16,28 @@ namespace DocumentsArchiving.Web.Controllers
         // GET: Documents
         public ActionResult Index(string sortOrder, string CurrentSort, string Subject, string SerialNumber, string DocumentTypeId, int? page)
         {
-            var documents = DocumentBLL.GetDocuments();
+            List<DocumentVM> documents = null;
             int pageSize = int.Parse(ConfigurationManager.AppSettings["pageSize"]);
-            int pageIndex = 1;
+            int skipCount = 1;
+            bool enablePaging = true;
 
-            /*filtering*/
+            /*filtering and paging*/
             if (!string.IsNullOrEmpty(Subject))
             {
-                documents = documents
-                    .Where(x => x.Subject.Contains(Subject)).ToList();
+                documents = DocumentBLL.GetDocumentsByFilter("Subject", Subject, enablePaging, pageSize, skipCount, sortOrder, true, "", true);
             }
             if (!string.IsNullOrEmpty(SerialNumber))
             {
-                documents = documents
-                    .Where(x => x.SerialNumber.Contains(SerialNumber)).ToList();
+                documents = DocumentBLL.GetDocumentsByFilter("SerialNumber", SerialNumber, enablePaging, pageSize, skipCount, sortOrder, true, "", true);
+
             }
             if (!string.IsNullOrEmpty(DocumentTypeId))
             {
-                documents = documents
-                    .Where(x => x.DocumentTypeId.Equals(int.Parse(DocumentTypeId))).ToList();
+                documents = DocumentBLL.GetDocumentsByFilter("DocumentTypeId", DocumentTypeId, enablePaging, pageSize, skipCount, sortOrder, true, "", true);
+            }
+            if (string.IsNullOrEmpty(Subject))
+            {
+                documents = DocumentBLL.GetDocumentsByFilter("", "", enablePaging, pageSize, skipCount, sortOrder, true, "", true);
             }
 
             /*sorting*/
@@ -66,8 +69,10 @@ namespace DocumentsArchiving.Web.Controllers
             ViewBag.DocumentTypeId = new SelectList(documentTypes, "DocumentTypeId", "DocumentTypeDesc", 0);
             ViewBag.CurrentSort = sortOrder;
 
-            //paging;
-            return View(documents.ToList().ToPagedList(page ?? pageIndex, pageSize));
+            IPagedList<DocumentVM> pagedDocuments = documents.ToPagedList(page ?? skipCount, pageSize);
+
+
+            return View(pagedDocuments);
         }
         // GET: Documents/Create
         public ActionResult Create()
