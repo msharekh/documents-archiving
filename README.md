@@ -183,7 +183,7 @@ Install-Package PagedList.Mvc -Version 4.5.0
 
     - InsertDocument(doc)
 
-    - GetDocuments()
+    - GetDocumentsByFilter(filters)
 
     - GetDocumentTypes()
 
@@ -200,11 +200,7 @@ Install-Package PagedList.Mvc -Version 4.5.0
 
     - GetDocumentTypes()
 
-    - GetFileBySubject(subject)
-
-    - GetFileByDocumentType(documentType)
-
-    - GetFileBySerialNumber(serialNumber)
+    - GetDocumentsByFilter(filters)
 
  
 

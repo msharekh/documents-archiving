@@ -39,9 +39,9 @@ namespace DocumentsArchiving.BLL
         {
             return DocumentDAL.GetDocuments();
         }
-        public static List<DocumentVM> GetDocumentsByFilter(string searchBy, string searchValue, bool enablePaging, int? pageSize, int? skipCount, string orderByAttrName, bool orderByDesc, string UserId, bool showAll = false)
+        public static List<DocumentVM> GetDocumentsByFilter(IDictionary<string, string> filters)
         {
-            return DocumentDAL.GetDocumentsByFilter( searchBy,  searchValue,  enablePaging, pageSize, skipCount, orderByAttrName,orderByDesc, UserId, showAll);
+            return DocumentDAL.GetDocumentsByFilter( filters);
         }
         public static void InsertDocument(DocumentAddVM document)
         {

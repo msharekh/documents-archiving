@@ -21,24 +21,16 @@ namespace DocumentsArchiving.Web.Controllers
             int skipCount = 1;
             bool enablePaging = true;
 
-            /*filtering and paging*/
-            if (!string.IsNullOrEmpty(Subject))
-            {
-                documents = DocumentBLL.GetDocumentsByFilter("Subject", Subject, enablePaging, pageSize, skipCount, sortOrder, true, "", true);
-            }
-            if (!string.IsNullOrEmpty(SerialNumber))
-            {
-                documents = DocumentBLL.GetDocumentsByFilter("SerialNumber", SerialNumber, enablePaging, pageSize, skipCount, sortOrder, true, "", true);
+            /*filtering */
+            IDictionary<string, string> filters = new Dictionary<string, string>();
 
-            }
-            if (!string.IsNullOrEmpty(DocumentTypeId))
-            {
-                documents = DocumentBLL.GetDocumentsByFilter("DocumentTypeId", DocumentTypeId, enablePaging, pageSize, skipCount, sortOrder, true, "", true);
-            }
-            if (string.IsNullOrEmpty(Subject))
-            {
-                documents = DocumentBLL.GetDocumentsByFilter("", "", enablePaging, pageSize, skipCount, sortOrder, true, "", true);
-            }
+            filters.Add("Subject", Subject);
+            filters.Add("SerialNumber", SerialNumber);
+            filters.Add("DocumentTypeId", DocumentTypeId);
+                
+            documents = DocumentBLL.GetDocumentsByFilter(filters);
+
+           
 
             /*sorting*/
             sortOrder = string.IsNullOrEmpty(sortOrder) ? "Subject" : sortOrder;
@@ -63,14 +55,13 @@ namespace DocumentsArchiving.Web.Controllers
             }
 
             List<DocumentTypeVM> documentTypes = DocumentBLL.GetDocumentTypes();
-            //documentTypes.Add(new DocumentTypeVM() { DocumentTypeId = 0, DocumentTypeDesc = "--select type--" });
             ViewBag.Subject = Subject;
             ViewBag.SerialNumber = SerialNumber;
             ViewBag.DocumentTypeId = new SelectList(documentTypes, "DocumentTypeId", "DocumentTypeDesc", 0);
             ViewBag.CurrentSort = sortOrder;
 
+            //paging;            
             IPagedList<DocumentVM> pagedDocuments = documents.ToPagedList(page ?? skipCount, pageSize);
-
 
             return View(pagedDocuments);
         }

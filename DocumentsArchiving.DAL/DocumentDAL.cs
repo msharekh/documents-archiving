@@ -91,8 +91,7 @@ namespace DocumentsArchiving.DAL
         }
 
 
-
-        public static List<DocumentVM> GetDocumentsByFilter(string searchBy, string searchValue, bool enablePaging, int? pageSize, int? skipCount, string orderByAttrName, bool orderByDesc, string UserId, bool showAll = false)
+        public static List<DocumentVM> GetDocumentsByFilter(IDictionary<string, string> _filters)
         {
 
             using (var repo = new GenericRepository<Document>())
@@ -102,30 +101,34 @@ namespace DocumentsArchiving.DAL
                 int? pagesCount = 0;
 
                 List<Expression<Func<Document, bool>>> filters = new List<Expression<Func<Document, bool>>>();
-                if (!string.IsNullOrEmpty(searchBy))
+                foreach (var f in _filters)
                 {
-                    switch (searchBy)
+                    if (!string.IsNullOrEmpty(f.Value))
                     {
-                        case "Subject":
-                            filters.Add(x => x.Subject.Contains(searchValue));
-                            break;
-                        case "SerialNumber":
-                            filters.Add(x => x.SerialNumber.Contains(searchValue));
-                            break;
-                        case "DocumentTypeId":
-                            filters.Add(x => x.DocumentTypeId.ToString().Contains(searchValue));
-                            break;
-                        default:
-                            break;
+                        switch (f.Key)
+                        {
+                            case "Subject":
+                                filters.Add(x => x.Subject.Contains(f.Value));
+                                break;
+                            case "SerialNumber":
+                                filters.Add(x => x.SerialNumber.Contains(f.Value));
+                                break;
+                            case "DocumentTypeId":
+                                filters.Add(x => x.DocumentTypeId.ToString().Contains(f.Value));
+                                break;
+                            default:
+                                break;
+                        }
+
                     }
-
+                    else
+                    {
+                        filters.Add(x => true);
+                    }
                 }
-                else
-                {                    
-                    filters.Add(x => true);
-                }
 
-                var documents = repo.GetByFiltersDataTables(filters, orderByAttrName, orderByDesc, out RowsCount, pageSize, skipCount).Select(x => new BI.DocumentVM
+
+                var documents = repo.GetAll(filters).Select(x => new BI.DocumentVM
                 {
                     Subject = x.Subject,
                     SerialNumber = x.SerialNumber,
