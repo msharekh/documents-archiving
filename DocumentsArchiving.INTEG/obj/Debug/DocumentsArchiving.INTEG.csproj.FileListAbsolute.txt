@@ -3,3 +3,5 @@ C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.INTEG\bi
 C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.INTEG\obj\Debug\DocumentsArchiving.INTEG.csproj.CoreCompileInputs.cache
 C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.INTEG\obj\Debug\DocumentsArchiving.INTEG.dll
 C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.INTEG\obj\Debug\DocumentsArchiving.INTEG.pdb
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.INTEG\bin\Debug\DocumentsArchiving.INTEG.dll.config
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.INTEG\obj\Debug\DocumentsArchiving.INTEG.csprojAssemblyReference.cache
