@@ -38,3 +38,10 @@ DocumentsArchiving.Web/bin/DocumentsArchiving.Web.pdb
 DocumentsArchiving.Web/obj/Debug/DocumentsArchiving.Web.csprojAssemblyReference.cache
 DocumentsArchiving.Web/obj/Debug/DocumentsArchiving.Web.dll
 DocumentsArchiving.Web/obj/Debug/DocumentsArchiving.Web.pdb
+.vs/documents archiving/v16/.suo
+DocumentsArchiving.BLL/obj/Debug/DocumentsArchiving.BLL.csprojAssemblyReference.cache
+DocumentsArchiving.Console/obj/Debug/DocumentsArchiving.Console.csprojAssemblyReference.cache
+DocumentsArchiving.DAL/obj/Debug/DocumentsArchiving.DAL.csprojAssemblyReference.cache
+DocumentsArchiving.INTEG/obj/Debug/DocumentsArchiving.INTEG.csproj.FileListAbsolute.txt
+DocumentsArchiving.Web/obj/Debug/DocumentsArchiving.Web.csproj.CopyComplete
+DocumentsArchiving.Web/obj/Debug/DocumentsArchiving.Web.csprojAssemblyReference.cache
