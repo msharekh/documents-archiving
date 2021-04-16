@@ -1,0 +1,118 @@
+﻿@model DocumentsArchiving.BI.DocumentAddVM
+
+@{
+	ViewBag.Title = "Create";
+}
+
+	<h2>Add Document</h2>
+
+@using (Html.BeginForm("Create", "Documents", FormMethod.Post, new
+{
+	enctype = "multipart/form-data"
+}))
+{
+	@Html.AntiForgeryToken()
+
+	<div class="form-horizontal">
+	 
+		<hr />
+		@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+		<div class="form-group">
+			@Html.LabelFor(model => model.Subject, htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				@Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+			</div>
+		</div>
+
+		<div class="form-group">
+			@Html.LabelFor(model => model.DocumentTypeId, "DocumentTypeId", htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				@Html.DropDownList("DocumentTypeId", null, htmlAttributes: new { @class = "form-control" })
+				@Html.ValidationMessageFor(model => model.DocumentTypeId, "", new { @class = "text-danger" })
+			</div>
+		</div>
+
+		<div class="form-group">
+			@Html.LabelFor(model => model.DocumentDate, htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				@Html.EditorFor(model => model.DocumentDate, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(model => model.DocumentDate, "", new { @class = "text-danger" })
+			</div>
+		</div>
+
+		<div class="form-group">
+			@Html.LabelFor(model => model.SerialNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				@Html.EditorFor(model => model.SerialNumber, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(model => model.SerialNumber, "", new { @class = "text-danger" })
+			</div>
+		</div>
+
+		<div class="form-group">
+			@Html.LabelFor(model => model.Details, htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				@Html.EditorFor(model => model.Details, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(model => model.Details, "", new { @class = "text-danger" })
+			</div>
+		</div>
+
+
+		<div class="form-group">
+			@Html.LabelFor(model => model.File, htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				<input type="file" name="File" value="" />				
+				@Html.ValidationMessageFor(model => model.File, "", new { @class = "text-danger" })
+
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-md-offset-2 col-md-10">
+				<input type="submit" value="Create" class="btn btn-default" />
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-md-offset-2 col-md-10">
+
+
+				@if (!string.IsNullOrEmpty(ViewBag.Message))
+				{
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					<div class="alert alert-warning alert-dismissible">
+						@ViewBag.Message
+					</div>
+				}
+
+			</div>
+		</div>
+	</div>
+}
+
+<div>
+	@Html.ActionLink("Back to List", "Index")
+</div>
+
+
+
+@Scripts.Render("~/bundles/jquery")
+
+
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('#DocumentDate').datepicker({
+			todayHighlight: true,
+			endDate: "0d",
+			//startDate: "Beginning of time",
+			//dateFormat: "mm/dd/yy",
+			//showStatus: true,
+			//showWeeks: true,
+			//currentText: 'Now',
+			//autoSize: true,
+			gotoCurrent: true
+			//showAnim: 'blind',
+			//highlightWeek: true
+		});
+	});
+</script>
+

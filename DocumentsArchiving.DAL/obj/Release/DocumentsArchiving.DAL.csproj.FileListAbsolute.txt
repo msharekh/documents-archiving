@@ -1,0 +1,14 @@
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Release\DocumentsArchiving.DAL.dll.config
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Release\DocumentsArchiving.DAL.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Release\DocumentsArchiving.DAL.pdb
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Release\DocumentsArchiving.BI.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Release\EntityFramework.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Release\DocumentsArchiving.BI.pdb
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Release\EntityFramework.xml
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\obj\Release\DocumentsArchiving.DAL.csprojAssemblyReference.cache
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\obj\Release\DocumentsArchiving.DAL.csproj.CoreCompileInputs.cache
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\obj\Release\DocumentsArchiving.DAL.csproj.CopyComplete
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\obj\Release\DocumentsArchiving.DAL.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\obj\Release\DocumentsArchiving.DAL.pdb

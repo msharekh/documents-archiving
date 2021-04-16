@@ -1,0 +1,14 @@
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BLL\bin\Release\DocumentsArchiving.BLL.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BLL\bin\Release\DocumentsArchiving.BLL.pdb
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BLL\bin\Release\DocumentsArchiving.BI.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BLL\bin\Release\DocumentsArchiving.DAL.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BLL\bin\Release\EntityFramework.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BLL\bin\Release\DocumentsArchiving.BI.pdb
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BLL\bin\Release\DocumentsArchiving.DAL.pdb
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BLL\bin\Release\DocumentsArchiving.DAL.dll.config
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BLL\bin\Release\EntityFramework.xml
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BLL\obj\Release\DocumentsArchiving.BLL.csprojAssemblyReference.cache
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BLL\obj\Release\DocumentsArchiving.BLL.csproj.CoreCompileInputs.cache
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BLL\obj\Release\DocumentsArchiving.BLL.csproj.CopyComplete
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BLL\obj\Release\DocumentsArchiving.BLL.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BLL\obj\Release\DocumentsArchiving.BLL.pdb

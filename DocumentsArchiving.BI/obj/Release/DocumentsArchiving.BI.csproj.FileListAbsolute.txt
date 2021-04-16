@@ -1,0 +1,6 @@
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\bin\Release\DocumentsArchiving.BI.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\bin\Release\DocumentsArchiving.BI.pdb
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\obj\Release\DocumentsArchiving.BI.csprojAssemblyReference.cache
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\obj\Release\DocumentsArchiving.BI.csproj.CoreCompileInputs.cache
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\obj\Release\DocumentsArchiving.BI.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\obj\Release\DocumentsArchiving.BI.pdb

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DocDBModel1StoreContainer" CdmEntityContainer="DocDBEntities1">
+    <EntitySetMapping Name="Transactions">
+      <EntityTypeMapping TypeName="DocDBModel1.Transaction">
+        <MappingFragment StoreEntitySet="Transaction">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="TransInfo" ColumnName="TransInfo" />
+          <ScalarProperty Name="DocumentId" ColumnName="DocumentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

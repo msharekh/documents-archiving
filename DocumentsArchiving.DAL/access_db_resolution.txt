@@ -1,0 +1,6 @@
+﻿CREATE LOGIN [IIS APPPOOL\DocumentsArchiving] FROM WINDOWS;
+
+CREATE USER DocumentsArchiving FOR LOGIN [IIS APPPOOL\DocumentsArchiving];
+
+GRANT SELECT ON dbo.Document TO DocumentsArchiving;
+GRANT SEL
