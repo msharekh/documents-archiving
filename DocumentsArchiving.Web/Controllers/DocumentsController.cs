@@ -19,7 +19,7 @@ namespace DocumentsArchiving.Web.Controllers
             List<DocumentVM> documents = null;
             int pageSize = int.Parse(ConfigurationManager.AppSettings["pageSize"]);
             int skipCount = 1;
-            bool enablePaging = true;
+            //bool enablePaging = true;
 
             /*filtering */
             IDictionary<string, string> filters = new Dictionary<string, string>();
