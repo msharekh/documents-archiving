@@ -3,4 +3,4 @@
 CREATE USER DocumentsArchiving FOR LOGIN [IIS APPPOOL\DocumentsArchiving];
 
 GRANT SELECT ON dbo.Document TO DocumentsArchiving;
-GRANT SEL
+GRANT SELECT ON dbo.DocumentType TO DocumentsArchiving;
