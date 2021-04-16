@@ -202,7 +202,13 @@ Install-Package PagedList.Mvc -Version 4.5.0
 
     - GetDocumentsByFilter(filters)
 
- 
+ ### INTEG
+
+- funcs
+
+    - ListOfCountryNamesByCode(doc)
+
+    
 
 ### Web functions:
 
