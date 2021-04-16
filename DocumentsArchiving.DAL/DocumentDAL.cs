@@ -97,8 +97,8 @@ namespace DocumentsArchiving.DAL
             using (var repo = new GenericRepository<Document>())
             {
 
-                int? RowsCount = 0;
-                int? pagesCount = 0;
+                //int? RowsCount = 0;
+                //int? pagesCount = 0;
 
                 List<Expression<Func<Document, bool>>> filters = new List<Expression<Func<Document, bool>>>();
                 foreach (var f in _filters)

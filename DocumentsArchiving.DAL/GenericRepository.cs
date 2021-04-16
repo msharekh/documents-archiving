@@ -519,7 +519,7 @@ namespace DocumentsArchiving.DAL
 
             IQueryable<T> result = queryable.Where(filters[0]);
 
-            var maxPageSize = 5;
+            //var maxPageSize = 5;
 
 
 
@@ -643,7 +643,7 @@ namespace DocumentsArchiving.DAL
 
 
 
-            var maxPageSize = 5;
+            //var maxPageSize = 5;
 
 
 
