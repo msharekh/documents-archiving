@@ -12,4 +12,3 @@ C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\bin\D
 C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\obj\Debug\DocumentsArchiving.BI.csproj.CoreCompileInputs.cache
 C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\obj\Debug\DocumentsArchiving.BI.dll
 C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\obj\Debug\DocumentsArchiving.BI.pdb
-C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\obj\Debug\DocumentsArchiving.BI.csprojAssemblyReference.cache
