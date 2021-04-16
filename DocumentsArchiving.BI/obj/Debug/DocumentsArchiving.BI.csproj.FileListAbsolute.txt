@@ -7,3 +7,8 @@ D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BI\bin\Debug\Document
 D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BI\bin\Debug\DocumentsArchiving.BI.pdb
 D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BI\obj\Debug\DocumentsArchiving.BI.dll
 D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.BI\obj\Debug\DocumentsArchiving.BI.pdb
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\bin\Debug\DocumentsArchiving.BI.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\bin\Debug\DocumentsArchiving.BI.pdb
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\obj\Debug\DocumentsArchiving.BI.csproj.CoreCompileInputs.cache
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\obj\Debug\DocumentsArchiving.BI.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.BI\obj\Debug\DocumentsArchiving.BI.pdb

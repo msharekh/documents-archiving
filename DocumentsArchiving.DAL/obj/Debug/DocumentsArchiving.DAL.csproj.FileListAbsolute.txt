@@ -25,3 +25,17 @@ D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\obj\Debug\Documen
 D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.csproj.CopyComplete
 D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.dll
 D:\Workshop\DocArch\documents-archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.pdb
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Debug\DocumentsArchiving.DAL.dll.config
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Debug\DocumentsArchiving.DAL.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Debug\DocumentsArchiving.DAL.pdb
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Debug\DocumentsArchiving.BI.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Debug\EntityFramework.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Debug\DocumentsArchiving.BI.pdb
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Debug\EntityFramework.xml
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.csprojAssemblyReference.cache
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.csproj.CoreCompileInputs.cache
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.csproj.CopyComplete
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.dll
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.DAL\obj\Debug\DocumentsArchiving.DAL.pdb

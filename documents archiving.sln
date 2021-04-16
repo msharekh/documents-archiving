@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentsArchiving.DAL", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentsArchiving.BI", "DocumentsArchiving.BI\DocumentsArchiving.BI.csproj", "{5DBEC66C-58EC-4A6F-BDBF-E28EBCDFB27F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentsArchiving.Console", "DocumentsArchiving.Console\DocumentsArchiving.Console.csproj", "{397EBECC-746A-4EAE-A080-84496C9D8F43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentsArchiving.INTEG", "DocumentsArchiving.INTEG\DocumentsArchiving.INTEG.csproj", "{B3A2F31F-0A3E-4FFA-9422-587D7E3866C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{5DBEC66C-58EC-4A6F-BDBF-E28EBCDFB27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DBEC66C-58EC-4A6F-BDBF-E28EBCDFB27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DBEC66C-58EC-4A6F-BDBF-E28EBCDFB27F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397EBECC-746A-4EAE-A080-84496C9D8F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397EBECC-746A-4EAE-A080-84496C9D8F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397EBECC-746A-4EAE-A080-84496C9D8F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397EBECC-746A-4EAE-A080-84496C9D8F43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3A2F31F-0A3E-4FFA-9422-587D7E3866C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A2F31F-0A3E-4FFA-9422-587D7E3866C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A2F31F-0A3E-4FFA-9422-587D7E3866C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A2F31F-0A3E-4FFA-9422-587D7E3866C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

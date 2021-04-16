@@ -1,0 +1,7 @@
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.Console\bin\Debug\DocumentsArchiving.Console.exe.config
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.Console\bin\Debug\DocumentsArchiving.Console.exe
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.Console\bin\Debug\DocumentsArchiving.Console.pdb
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.Console\obj\Debug\DocumentsArchiving.Console.csprojAssemblyReference.cache
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.Console\obj\Debug\DocumentsArchiving.Console.csproj.CoreCompileInputs.cache
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.Console\obj\Debug\DocumentsArchiving.Console.exe
+C:\Users\MSH\source\repos\GitHub\documents-archiving\DocumentsArchiving.Console\obj\Debug\DocumentsArchiving.Console.pdb
