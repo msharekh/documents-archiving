@@ -110,6 +110,10 @@
 - DocumentsArchiving.BLL
 - DocumentsArchiving.DAL
 - DocumentsArchiving.Web
+- DocumentsArchiving.Integ
+- DocumentsArchiving.Console
+
+
 
 ## NuGet Libraries
 Install-Package PagedList.Mvc -Version 4.5.0 
@@ -207,8 +211,7 @@ Install-Package PagedList.Mvc -Version 4.5.0
 - funcs
 
     - ListOfCountryNamesByCode(doc)
-
-    
+ http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?op=ListOfCountryNamesByCode   
 
 ### Web functions:
 
