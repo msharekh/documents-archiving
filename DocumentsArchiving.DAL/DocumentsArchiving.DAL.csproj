@@ -129,6 +129,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="SQLQuery.sql" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DocumentsArchiving.BI\DocumentsArchiving.BI.csproj">

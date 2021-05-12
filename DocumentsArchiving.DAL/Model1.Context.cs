@@ -27,6 +27,6 @@ namespace DocumentsArchiving.DAL
     
         public virtual DbSet<Document> Documents { get; set; }
         public virtual DbSet<DocumentType> DocumentTypes { get; set; }
-        public virtual DbSet<Transaction> Transactions { get; set; }
+        //public virtual DbSet<Transaction> Transactions { get; set; }
     }
 }

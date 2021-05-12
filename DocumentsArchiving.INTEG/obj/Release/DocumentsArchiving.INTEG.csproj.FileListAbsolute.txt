@@ -1,0 +1,6 @@
+D:\Repos\documents-archiving\DocumentsArchiving.INTEG\bin\Release\DocumentsArchiving.INTEG.dll.config
+D:\Repos\documents-archiving\DocumentsArchiving.INTEG\bin\Release\DocumentsArchiving.INTEG.dll
+D:\Repos\documents-archiving\DocumentsArchiving.INTEG\bin\Release\DocumentsArchiving.INTEG.pdb
+D:\Repos\documents-archiving\DocumentsArchiving.INTEG\obj\Release\DocumentsArchiving.INTEG.csproj.CoreCompileInputs.cache
+D:\Repos\documents-archiving\DocumentsArchiving.INTEG\obj\Release\DocumentsArchiving.INTEG.dll
+D:\Repos\documents-archiving\DocumentsArchiving.INTEG\obj\Release\DocumentsArchiving.INTEG.pdb

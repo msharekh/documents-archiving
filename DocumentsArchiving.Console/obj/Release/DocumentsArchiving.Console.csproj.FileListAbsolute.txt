@@ -1,0 +1,11 @@
+D:\Repos\documents-archiving\DocumentsArchiving.Console\bin\Release\DocumentsArchiving.Console.exe.config
+D:\Repos\documents-archiving\DocumentsArchiving.Console\bin\Release\DocumentsArchiving.Console.exe
+D:\Repos\documents-archiving\DocumentsArchiving.Console\bin\Release\DocumentsArchiving.Console.pdb
+D:\Repos\documents-archiving\DocumentsArchiving.Console\bin\Release\DocumentsArchiving.INTEG.dll
+D:\Repos\documents-archiving\DocumentsArchiving.Console\bin\Release\DocumentsArchiving.INTEG.pdb
+D:\Repos\documents-archiving\DocumentsArchiving.Console\bin\Release\DocumentsArchiving.INTEG.dll.config
+D:\Repos\documents-archiving\DocumentsArchiving.Console\obj\Release\DocumentsArchiving.Console.csprojAssemblyReference.cache
+D:\Repos\documents-archiving\DocumentsArchiving.Console\obj\Release\DocumentsArchiving.Console.csproj.CoreCompileInputs.cache
+D:\Repos\documents-archiving\DocumentsArchiving.Console\obj\Release\DocumentsArchiving.Console.csproj.CopyComplete
+D:\Repos\documents-archiving\DocumentsArchiving.Console\obj\Release\DocumentsArchiving.Console.exe
+D:\Repos\documents-archiving\DocumentsArchiving.Console\obj\Release\DocumentsArchiving.Console.pdb
